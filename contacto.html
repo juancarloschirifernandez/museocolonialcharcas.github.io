@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Museo de Arte Moderno</title>
+  <link rel="stylesheet" href="/dist/output.css">
+  <link rel="stylesheet" href="/src/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css">
+</head>
+<body>
+
+  <!-- Barra de progreso -->
+  <div class="progress-bar"></div>
+
+  <header class="bg-black text-white py-4"> 
+    <div class="flex items-center justify-center"> 
+      <a href="index.html" class="text-5xl font-serif px-4 inline-block border-b-4 border-gradient-black-yellow-white mb-2">
+        Museo Colonial Charcas
+        <img src="/img/logo.jpg" class="h-12 inline-block align-middle">
+      </a>
+      
+      </div>
+    </div>
+    <nav class="flex justify-center w-1/2 mx-auto">
+        <ul class="flex justify-around mt-5 text-l font-serif">
+          <li><a class="px-2 group text-white-500 transition-all duration-300 ease-in-out" href="obras.html">
+            <span class="bg-left-bottom bg-gradient-to-r from-white to-amber-500 bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                Obras
+            </span>
+          </a></li>
+          <li><a class="px-2 group text-white-500 transition-all duration-300 ease-in-out" href="#">
+            <span class="bg-left-bottom bg-gradient-to-r from-white to-amber-500 bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                Exposiciones
+            </span>
+          </a></li>
+          <li><a class="px-2 group text-white-500 transition-all duration-300 ease-in-out" href="#">
+            <span class="bg-left-bottom bg-gradient-to-r from-white to-amber-500 bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                Horarios
+            </span>
+          </a></li>
+          <li><a href="contacto.html" class="px-2 group text-white-500 transition-all duration-300 ease-in-out" href="#">
+            <span class="bg-left-bottom bg-gradient-to-r from-white to-amber-500 bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                Contacto
+            </span>
+          </a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <main class="py-8">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8">Información de Contacto</h2>
+  
+      <!-- Agrega aquí la información de contacto, como dirección, teléfono, correo, etc. -->
+      <div class="flex items-center mb-4">
+        <svg class="w-6 h-6 mr-2 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+        <p>Dirección: Bolivar Nº 698 esq. Dalence, Sucre, Bolivia</p>
+      </div>
+  
+      <div class="flex items-center mb-4">
+        <svg class="w-6 h-6 mr-2 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22s8-4 8-10V7.5C20 5 18 3 15.5 3S11 5 11 7.5V12"></path></svg>
+        <p>Teléfono: 6456100</p>
+      </div>
+  
+      <div class="flex items-center mb-4">
+        <svg class="w-6 h-6 mr-2 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 2H2v20l4-4h16l4 4V2zm-4 6h-4l-2 2H8v8h4l2-2h4V8z"></path></svg>
+        <p>Correo Electrónico: museocolonialcharcas1@gmail.com</p>
+      </div>
+  
+      <!-- Puedes agregar un formulario de contacto si es necesario -->
+      <h2 class="text-3xl font-bold mt-8 mb-4">Envíanos un Mensaje</h2>
+      <form action="procesar_formulario.php" method="post" class="max-w-md mx-auto">
+        <!-- Agrega aquí los campos del formulario, como nombre, correo, mensaje, etc. -->
+        <div class="mb-4">
+          <label for="nombre" class="block text-gray-700 text-sm font-bold mb-2">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required
+            class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-indigo-500"
+          >
+        </div>
+  
+        <div class="mb-4">
+          <label for="correo" class="block text-gray-700 text-sm font-bold mb-2">Correo Electrónico:</label>
+          <input type="email" id="correo" name="correo" required
+            class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-indigo-500"
+          >
+        </div>
+  
+        <div class="mb-6">
+          <label for="mensaje" class="block text-gray-700 text-sm font-bold mb-2">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required
+            class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-indigo-500"
+          ></textarea>
+        </div>
+  
+        <button type="submit" class="bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600 focus:outline-none focus:shadow-outline-indigo active:bg-indigo-800">
+          Enviar Mensaje
+        </button>
+      </form>
+    </div>
+  </main>
+  
+  
+
+  <iframe class="w-full h-48 border-2 border-gray-300 rounded mb-4" width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=-65.26126474142076%2C-19.051581547632818%2C-65.2568954229355%2C-19.049236386636437&amp;layer=mapnik&amp;marker=-19.05040897127791%2C-65.25908008217812" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=-19.05041&amp;mlon=-65.25908#map=19/-19.05041/-65.25908">Ver el mapa más grande</a></small>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto flex justify-between">
+      <p>Copyright © 2023 Museo Colonial Charcas</p>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#" class="hover:text-gray-400">Aviso legal</a></li>
+          <li><a href="#" class="hover:text-gray-400">Política de privacidad</a></li>
+          <li><a href="#" class="hover:text-gray-400">Cookies</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>

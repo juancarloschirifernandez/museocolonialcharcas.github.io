@@ -1,0 +1,52 @@
+#carousel {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  #carousel img {
+    position: absolute;
+    left: 50%;
+    animation: scroll 30s linear infinite;
+    transform: translateX(-50%) scale(1);
+    transition: opacity 1s ;
+    -webkit-transition: opacity 1s ;
+    -moz-transition: opacity 2s ;
+    -ms-transition: opacity 1s ;
+    -o-transition: opacity 1s ;
+    -webkit-animation: scroll 30s linear infinite;
+    -webkit-transform: translateX(-50%) scale(1);
+    -moz-transform: translateX(-50%) scale(1);
+    -ms-transform: translateX(-50%) scale(1);
+    -o-transform: translateX(-50%) scale(1);
+}
+  
+  @keyframes scroll {
+    from {
+      left: 90%; /* derecha */
+    }
+    to {
+      left: -20%; /* izquierda */
+    }
+  }
+
+  .progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background: rgb(230, 210, 38);
+    z-index: 999;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+/* Definición del gradiente */
+.border-gradient-black-yellow-white {
+  border-image: linear-gradient(90deg, #000, #ffcc29, #fff);
+  border-image-slice: 1;
+}
