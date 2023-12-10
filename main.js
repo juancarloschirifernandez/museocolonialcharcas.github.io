@@ -16,7 +16,7 @@ window.onscroll = () => {
 
 document.addEventListener("DOMContentLoaded", function () {
   const video = document.createElement("video");
-  video.src = "/vid/museoyt.mp4";
+  video.src = "vid/museoyt.mp4";
 
   video.currentTime = 2;
   video.loop = true;
@@ -24,14 +24,20 @@ document.addEventListener("DOMContentLoaded", function () {
   // Añadir clases de Tailwind CSS
   video.classList.add("w-full", "h-full", "sm:w-192", "sm:h-192", "md:w-4/3", "md:h-4/3", "lg:w-full", "lg:h-full");
 
-  video.style.objectFit = "cover";
-  video.style.position = "absolute";
-  video.style.opacity = "0.6";
-  video.style.zIndex = "-1";
-  video.muted = true;
-  video.controls = false;
-  video.oncontextmenu = () => false;
-  video.style.pointerEvents = "none";
+// Restablecer el CSS que ya tenías
+video.style.objectFit = "cover";
+video.style.position = "absolute";
+video.style.zIndex = "-1";
+video.muted = true;
+video.controls = false;
+video.oncontextmenu = () => false;
+video.style.pointerEvents = "none";
+
+// Añadir nuevas y restablecer el estilo en línea
+video.classList.add("w-full", "h-full", "object-cover");
+video.style.maxWidth = "100%";
+video.style.maxHeight = "100%";
+
 
   const hero = document.getElementById("hero");
 
@@ -113,4 +119,3 @@ function CloseModal() {
   overlay.remove();
   contactInfo.remove();
 }
-//https://www.boutiquesdemusees.fr/fr/boutique/musees/musee-du-louvre/?par=2

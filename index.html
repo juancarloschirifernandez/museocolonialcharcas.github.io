@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="/dist/output.css">
   <link rel="stylesheet" href="/src/main.css">
   <link rel="stylesheet" href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css">
+
 </head>
 <body>
 
@@ -17,40 +18,49 @@
 <header class="bg-black text-white py-4"> 
   <div class="flex items-center justify-center"> 
     
-    <div class="flex items-center justify-center"> 
-      <a href="index.html" class="text-5xl font-serif px-4 inline-block border-b-4 border-gradient-black-yellow-white mb-2">
+    <div class="flex flex-col items-center justify-center text-center">
+      <a href="index.html" class="text-5xl font-serif mb-2 border-b-4 border-gradient-black-yellow-white">
         Museo Colonial Charcas
-        <img src="/img/logo.jpg" class="h-12 inline-block align-middle">
       </a>
-      
-      </div>
+      <img src="img/logo.jpg" class="h-12 hidden md:inline-block align-middle">
+    </div>
+    
+    
       
 
   </div>
-    <nav class="flex justify-center w-1/2 mx-auto">
-      <ul class="flex justify-around mt-5 text-l font-serif">
-        <li><a class="px-2 group text-white-500 transition-all duration-300 ease-in-out" href="obras.html">
-          <span class="bg-left-bottom bg-gradient-to-r from-white to-amber-500 bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
-              Obras
-          </span>
-        </a></li>
-        <li><a class="px-2 group text-white-500 transition-all duration-300 ease-in-out" href="#">
-          <span class="bg-left-bottom bg-gradient-to-r from-white to-amber-500 bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
-              Exposiciones
-          </span>
-        </a></li>
-        <li><a class="px-2 group text-white-500 transition-all duration-300 ease-in-out" href="#">
-          <span class="bg-left-bottom bg-gradient-to-r from-white to-amber-500 bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
-              Horarios
-          </span>
-        </a></li>
-        <li><a href="contacto.html" class="px-2 group text-white-500 transition-all duration-300 ease-in-out" href="#">
-          <span class="bg-left-bottom bg-gradient-to-r from-white to-amber-500 bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
-              Contacto
-          </span>
-        </a></li>
-      </ul>
-    </nav>
+  <nav class="flex justify-center w-1/2 mx-auto">
+    <ul class="flex justify-around mt-5 text-l font-serif">
+      <li><a class="px-2 group text-white-500 transition-all duration-300 ease-in-out" href="obras.html">
+        <span class="bg-left-bottom bg-gradient-to-r from-white to-amber-500 bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+            Obras
+        </span>
+      </a></li>
+      <li><a class="px-2 group text-white-500 transition-all duration-300 ease-in-out" href="index.html">
+        <span class="bg-left-bottom bg-gradient-to-r from-white to-amber-500 bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+            Principal
+        </span>
+      </a></li>
+     
+      <li><a href="contacto.html" class="px-2 group text-white-500 transition-all duration-300 ease-in-out">
+        <span class="bg-left-bottom bg-gradient-to-r from-white to-amber-500 bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+            Contacto
+        </span>
+      </a></li>
+
+      <li><a href="contacto.html#horario" class="px-2 group text-white-500 transition-all duration-300 ease-in-out" >
+        <span class="bg-left-bottom bg-gradient-to-r from-white to-amber-500 bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+            Horario
+        </span>
+      </a></li>
+      <li><a href="actividades.html" class="px-2 group text-white-500 transition-all duration-300 ease-in-out" >
+        <span class="bg-left-bottom bg-gradient-to-r from-white to-amber-500 bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+            Actividades
+        </span>
+      </a></li>
+
+    </ul>
+  </nav>
   </div>
 </header>
 
@@ -71,88 +81,80 @@
     </p>
   </div>
 
-
-
   <section id="exhibits" class="py-8 bg-gray-100">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold mb-8">Exposiciones Destacadas</h2>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-white rounded-lg overflow-hidden shadow-lg">
-          <div class="p-4">
-            <img src="/img/arte1.png" alt="Exposición 1" class="w-full h-65 object-cover rounded-md mb-4">
-            <h3 class="text-2xl font-semibold mb-2">Título de la Exposición 1</h3>
-            <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque velit nec cursus aliquet.</p>
-            <a href="#" class="inline-block bg-black text-white px-4 py-2 rounded hover:bg-indigo-600">Ver más</a>
-          </div>
-        </div>
-  
-        <div class="bg-white rounded-lg overflow-hidden shadow-lg">
-          <div class="p-4">
-            <img src="/img/arte2.png" alt="Exposición 2" class="w-full h-65 object-cover rounded-md mb-4">
-            <h3 class="text-2xl font-semibold mb-2">Título de la Exposición 2</h3>
-            <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque velit nec cursus aliquet.</p>
-            <a href="#" class="inline-block bg-black text-white px-4 py-2 rounded hover:bg-indigo-600">Ver más</a>
-          </div>
-        </div>
-  
-        <div class="bg-white rounded-lg overflow-hidden shadow-lg">
-          <div class="p-4">
-            <img src="/img/arte3.png" alt="Exposición 3" class="w-full h-65 object-cover rounded-md mb-4">
-            <h3 class="text-2xl font-semibold mb-2">Título de la Exposición 3</h3>
-            <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque velit nec cursus aliquet.</p>
-            <a href="#" class="inline-block bg-black text-white px-4 py-2 rounded hover:bg-indigo-600">Ver más</a>
-          </div>
-        </div>
-      </div>
+    <div class="w-full sm:w-2/3 mx-auto p-8 rounded-lg bg-white shadow-lg text-black text-center">
+      <h2 class="text-3xl font-bold mb-8" >Exposiciones Destacadas</h2>
     </div>
-  </section>
-  
+   
+    <div class="container mx-auto px-4 carousel-container">
+    
 
-  <section id="video" class="py-8">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold mb-8">Vídeo Promocional</h2>
-      <div class="flex justify-center">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/WBwNw4WjV7g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <!-- Carrusel -->
+      <div class="slider">
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+          <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                <div class="p-4">
+                  <img src="img/arte1.png" alt="Exposición 1" class="w-full h-65 object-cover rounded-md mb-4">
+                  <h3 class="text-2xl font-semibold mb-2">Título de la Exposición 1</h3>
+                  <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque velit nec cursus aliquet.</p>
+                 
+                </div>
+              </div>
+        
+              <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                <div class="p-4">
+                  <img src="img/arte2.png" alt="Exposición 2" class="w-full h-65 object-cover rounded-md mb-4">
+                  <h3 class="text-2xl font-semibold mb-2">Título de la Exposición 2</h3>
+                  <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque velit nec cursus aliquet.</p>
+                 
+                </div>
+              </div>
+        
+              <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                <div class="p-4">
+                  <img src="img/arte3.png" alt="Exposición 3" class="w-full h-65 object-cover rounded-md mb-4">
+                  <h3 class="text-2xl font-semibold mb-2">Título de la Exposición 3</h3>
+                  <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque velit nec cursus aliquet.</p>
+               
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
       </div>
+    
+
     </div>
+  
+    
   </section>
+  
+  
 
   <section id="artists" class="py-8">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold mb-8">Artistas Destacados</h2>
+      <h2 class="text-3xl font-bold mb-8">Imagenes del Museo</h2>
       
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       
+        
+          
+        </div>
+        
         <div class="bg-white rounded-lg overflow-hidden shadow-lg">
-          <img src="/img/arte4.png" alt="Artista 1" class="w-full h-48 object-cover">
+          <img src="img/patio.jpg" alt="Artista 3" class="w-full h-48 object-cover">
           <div class="p-4">
-            <h3 class="text-xl font-semibold mb-2">Nombre del Artista</h3>
-            <p class="text-gray-700">Breve biografía...</p>
+          
           </div>
         </div>
         
         <div class="bg-white rounded-lg overflow-hidden shadow-lg">
-          <img src="/img/patio2.jpg" alt="Artista 2" class="w-full h-48 object-cover">
+          <img src="img/patio1.jpg" alt="Artista 4" class="w-full h-48 object-cover">
           <div class="p-4">
-            <h3 class="text-xl font-semibold mb-2">Nombre del Artista</h3>
-            <p class="text-gray-700">Breve biografía...</p>
-          </div>
-        </div>
-        
-        <div class="bg-white rounded-lg overflow-hidden shadow-lg">
-          <img src="/img/patio.jpg" alt="Artista 3" class="w-full h-48 object-cover">
-          <div class="p-4">
-            <h3 class="text-xl font-semibold mb-2">Nombre del Artista</h3>
-            <p class="text-gray-700">Breve biografía...</p>  
-          </div>
-        </div>
-        
-        <div class="bg-white rounded-lg overflow-hidden shadow-lg">
-          <img src="/img/patio1.jpg" alt="Artista 4" class="w-full h-48 object-cover">
-          <div class="p-4">
-            <h3 class="text-xl font-semibold mb-2">Nombre del Artista</h3>
-            <p class="text-gray-700">Breve biografía...</p>
+          
           </div>
         </div>
         
@@ -175,6 +177,9 @@
     </nav>
   </div>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
 
 <script src="main.js"></script>
